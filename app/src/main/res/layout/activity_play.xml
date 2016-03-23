@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.thonners.singpong.PlayActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    <SurfaceView
+        android:id="@+id/primary_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.thonners.singpong.PongPitchSurfaceView
+        android:id="@+id/pitch_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    </FrameLayout>
+
+</FrameLayout>
